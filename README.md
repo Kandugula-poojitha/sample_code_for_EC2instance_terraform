@@ -296,9 +296,9 @@ Run terraform show
 
 
 1.	Verify that your resource (e.g. AWS EC2 instance)are created as expected
-2.	
-3.	Can check AWS console or use Terraform command terraform show
-4.	
+	
+2.	Can check AWS console or use Terraform command terraform show
+	
 terraform show -json shows output in json format
 
 terraform show provides human-readable output from either a state file or a plan file
@@ -330,8 +330,8 @@ Run terraform destroy
 Used  to remove the infrastructure managed by Terraform
 
 1.	Run command terraform destroy confirm by typing ‘yes’
-2.	
-3.	Can check AWS console or use Terraform command terraform show 
+	
+2.	Can check AWS console or use Terraform command terraform show 
 
 Terraform Variables – variables.tf | terraform.tfvars
 
