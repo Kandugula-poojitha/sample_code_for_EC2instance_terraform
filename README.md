@@ -1,6 +1,6 @@
 #Terraform and how it is used,installation on various platforms,run and connect to webserver.
 
-IaC - INFRASTRUCTURE AS CODE
+**IaC - INFRASTRUCTURE AS CODE**
  
  Before going to learn what is Terraform, lets know what is IaC-Infrastruture as Code.
 Suppose if you want to  set up some machines on cloud platform e g.  AWS, AZURE ,GOOGLE CLOUD  etc.
@@ -16,7 +16,7 @@ Terraform is a open-source IaC tool
 Can automate the setup and management of the infrastructure  by writing the code e.g. setting up remote machines on cloud platforms like AWS,AZURE,GCP etc..
 Terraform uses the special human readable code language (HashiCorp Configuration Language) to define the infrastructure ,making easy to Version control and collaborate with others.
 
-Install Terraform on Windows
+**Install Terraform on Windows**
 
 
 1. Go to https://developer.hashicorp.com/terraform/install
@@ -28,7 +28,7 @@ Install Terraform on Windows
 terraform
 terraform version or terraform -v 
 
-Install Terraform on Mac OS
+**Install Terraform on Mac OS**
 
 
 1.	Goto https://developer.hashicorp.com/terraform/install
@@ -41,7 +41,7 @@ brew -version     which brew      Can update brew– brew update
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 
- Install Terraform on MaC OS using Binary files
+ **Install Terraform on MaC OS using Binary files**
  
  
 1.	Goto https://developer.hashicorp.com/terraform/install
@@ -121,7 +121,7 @@ terraform version or terraform -v
 
 
 
-Install Terraform in Linux 
+**Install Terraform in Linux**
 
 
 
@@ -136,7 +136,7 @@ terraform version or terraform -v
 terraform -help
 
 
-Create a Project
+**Create a Project**
 
 
 1.	Create a folder for your Terraform project ( e.g  in my case I gave Terraform folder1)
@@ -146,7 +146,7 @@ This file will contain your Terraform Configuration
 
 
 
-Create Configuration file
+**Create Configuration file**
 
 
 
@@ -187,7 +187,7 @@ secret_key = “ your secret key”
 To authenticate Terraform with your aws account , you’ll need to set your aws credentials
 
 
-Creating security credentials on AWS 
+**Creating security credentials on AWS**
 
 
 1.	Login to your AWS account
@@ -231,7 +231,7 @@ Name = “Example_for_EC2instancce”
 [ for a new project or new config run this command after terraform init]
 
 
-Run terraform init
+**Run terraform init**
 
 
 1.	Open your terminal or command prompt and navigate to your project directory
@@ -242,7 +242,7 @@ It is the first command you should run after writing a new Terraform configurati
 You can safely run this command multiple times during your project’s lifecycle
 
 
-Run terraform plan
+**Run terraform plan**
 
 
 1. Run terraform plan
@@ -265,7 +265,7 @@ terraform show mypaln                  terraform show myplan > myplan.txt
 To apply the plan later, use following command: terraform apply myplan
 
 
-Run terraform apply
+**Run terraform apply**
 
 
 1.	When you are ready to create real infrastructure run : terraform apply
@@ -292,7 +292,7 @@ terraform apply -var=”instance_type=t2.large” Can provide values pf variable
 
 
    
-Run terraform show
+**Run terraform show**
 
 
 1.	Verify that your resource (e.g. AWS EC2 instance)are created as expected
@@ -324,7 +324,7 @@ When you create or modify resources using Terraform ,it updates this blueprint
 
 terraform state command with options to perform basic modification of the state
 
-Run terraform destroy
+**Run terraform destroy**
 
 
 Used  to remove the infrastructure managed by Terraform
@@ -333,7 +333,7 @@ Used  to remove the infrastructure managed by Terraform
 	
 2.	Can check AWS console or use Terraform command terraform show 
 
-Terraform Variables – variables.tf | terraform.tfvars
+**Terraform Variables – variables.tf | terraform.tfvars**
 
 
 We can use variables to reuse values in terraform configuration file
